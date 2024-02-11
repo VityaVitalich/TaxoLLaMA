@@ -1,0 +1,3 @@
+
+hyponym: sátrapa | hypernyms:título nobiliario, gobernador, honorífico, político, dirigente, autoridad, líder, persona,
+hyponym: lengüeta | hypernyms:aleteo, instrumento de viento-madera, instrumento musical,

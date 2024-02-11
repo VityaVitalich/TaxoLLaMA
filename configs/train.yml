@@ -1,0 +1,38 @@
+SEED: # random seed
+  - 57
+CUDA_VISIBLE_DEVICES:  # list of visible cuda devices
+  - 3
+EPOCHS: # number of epochs to train
+  - 1
+BATCH_SIZE: # batch size to train
+  - 2
+LR: # learning rate
+  - 3e-4
+MIN_LR: # minimal learning rate in cosine scheduler
+  - 3e-4
+DATA_PATH: # path to train data
+  - "/home/LLM_Taxonomy/SemEval2018-Task9/custom_datasets/1C.spanish_train.pickle"
+TEST_DATA_PATH: # path to test data
+  - "/home/LLM_Taxonomy/SemEval2018-Task9/custom_datasets/1C.spanish.pickle"
+USING_PEFT: # whether to use LORA
+  - True
+MODEL_TYPE: # type of loaded model, Llama or Auto
+  - "Llama"
+MODEL_CHECKPOINT: # Hugging Face checkpoint
+  - "meta-llama/Llama-2-7b-hf"
+DTYPE: # half for bfloat16 and full for fp32
+- "half"
+LOG_PRED_EVERY: # how often to run generation and log them
+  - 100
+DATA_PREPROC_STYLE: # name to save model with 
+- "test_gpu"
+QLORA: # whether to use 4 bit quantization
+- true
+LOAD_PATH: # path for a previous checkpoint. State dict saved as .pth
+- "meta-llama-Llama-2-7b-hfUnified_Clean_wn_noun_verb_def_epoch=0_MAP=0.921505376344086.pth"
+USE_DEF_PROMPT: # whether to use definition in prompt
+- true
+USE_DEF_TARGET: # using definition in target. please do not change
+- false
+USE_NUMBER_TARGET: # using numbers of wordnet sense in target. please do not change
+- false

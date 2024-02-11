@@ -1,0 +1,16 @@
+DATA: # name of test set
+  - "food"
+IN_NAME: # path to perplexities
+  - '/home/LLM_Taxonomy/TExEval-2_testdata_1.2/data/food/wordnet/pred_hypernym/unified_clean_def.pickle'
+N_PARENTS: # maximum number of hypernyms per node
+  - 3
+LEMMA: # whether definitions were used in ppls
+  - true
+REVERSE: # leave it true
+  - true
+LOW: # low threshold in brute forcing
+  - 1
+HIGH: # high threshold in brute forcing
+  - 6
+STEP: # step in brute forcing
+  - 0.1

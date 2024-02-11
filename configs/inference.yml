@@ -1,0 +1,56 @@
+# all configs without comments correspond to train configs
+SEED:
+  - 57
+CUDA_VISIBLE_DEVICES:
+  - 0
+EPOCHS:
+  - 0
+BATCH_SIZE:
+  - 8
+LR:
+  - 3e-4
+MIN_LR:
+  - 3e-4
+DATA_PATH: # write test path here as well
+  - "/home/LLM_Taxonomy/DataConstructor/data/easy_hyper.pickle"
+TEST_DATA_PATH:
+  - "/home/LLM_Taxonomy/DataConstructor/data/easy_hyper.pickle"
+USING_PEFT:
+  - True
+MODEL_TYPE:
+  - "Llama"
+MODEL_CHECKPOINT:
+  - "meta-llama/Llama-2-7b-hf"
+DTYPE:
+- "half"
+LOG_PRED_EVERY:
+- 400
+DATA_PREPROC_STYLE:
+- "EasyTask_Unified_3beams_40topk_0.8temp_3norepeat"
+LOAD_PATH:
+- "meta-llama-Llama-2-7b-hfUnified_wn_noun_verb_def_epoch=0_MAP=0.7340136054421769.pth"
+PREV_PREDICT: # whether to load previous prediction. leave null if not
+- null
+STRATEGY: # leave it "stohastic"
+- "stohastic"
+NUM_BEAMS: # number of beams in generation
+- 3
+MAX_NEW_TOKENS: # maximum new tokens. It will generate max_new_tokens - 1
+- 32
+TEMPERATURE: # sampling temperature
+- 0.8
+TOP_K: # top-k sampling
+- 40
+NUM_RETURN_SEQUENCES: # how many sequences to return
+- 2
+NO_REPEAT_NGRAM: # how many ngrams are restricted to be after each other
+- 3
+QLORA:
+- true
+USE_DEF_PROMPT:
+- true
+USE_DEF_TARGET:
+- false
+USE_NUMBER_TARGET:
+- false
+

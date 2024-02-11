@@ -1,0 +1,12 @@
+TEST_DATA_PATH: # path to test data
+  - "/home/LLM_Taxonomy/TaxonomyEnrichment/data/noun/test_hypernyms_def.pickle"
+OUTPUT_NAME: # path to predictions saved by inference.py or by train.py
+  - "/home/data/taxonomy/model_outputs/_meta-llama-Llama-2-7b-hfTaxoEnrich_noun_Unified_3beams_40topk_0.8temp_3norepeat_stohastic_"
+SAVE_EXAMPLES: # whether to save outputs and gold predictions in visually appealing format
+  - true
+SAVE_EXAMPLES_PATH: # path where to save metrics and examples
+  - "/home/LLM_Taxonomy/TaxonomyEnrichment/model_examples/unified_noun"
+IDS_TO_USE: # leave it "all"
+  - "all"
+DECODING: # decoding strategy. "mean" for passing one prediction and finding mean, "concat" for concatenating multiple predictions
+  - "concat"    

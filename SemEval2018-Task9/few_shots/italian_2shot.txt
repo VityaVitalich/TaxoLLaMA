@@ -1,0 +1,3 @@
+
+hyponym: sesto | hypernyms:grado, numero ordinale, frazione, carica,
+hyponym: Sigillo | hypernyms:comune, municipalità, comune italiano, frazione, paese, quartiere, comunità, borgo,

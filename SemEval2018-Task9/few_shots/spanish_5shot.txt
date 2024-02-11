@@ -1,0 +1,6 @@
+
+hyponym: sátrapa | hypernyms:título nobiliario, gobernador, honorífico, político, dirigente, autoridad, líder, persona,
+hyponym: lengüeta | hypernyms:aleteo, instrumento de viento-madera, instrumento musical,
+hyponym: rocalla | hypernyms:jardín, espacio, extensión, vecindad,
+hyponym: bacinilla | hypernym:recipiente,
+hyponym: linfangitis | hypernyms:inflamación, síntoma, afección, patología, dolencia, enfermedad, mal, signo clínico,

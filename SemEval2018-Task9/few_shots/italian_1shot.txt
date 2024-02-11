@@ -1,0 +1,2 @@
+
+hyponym: sesto | hypernyms:grado, numero ordinale, frazione, carica,

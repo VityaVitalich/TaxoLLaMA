@@ -1,0 +1,6 @@
+
+hyponym: sesto | hypernyms:grado, numero ordinale, frazione, carica,
+hyponym: Sigillo | hypernyms:comune, municipalità, comune italiano, frazione, paese, quartiere, comunità, borgo,
+hyponym: toga | hypernyms:comune, mantella, indumento, vestito, mantello, veste, abito, costume,
+hyponym: Eduard Buchner | hypernyms:accademico, persona, professore, biochimico, scienziato, chimico, scopritore, docente,
+hyponym: montagna | hypernyms:panorama, grande quantità, rilievo,
