@@ -2,7 +2,6 @@
 
 We present a unified model that is capable of solving taxonomy related tasks. Here you could find the instructions to reproduce all our results.
 
-
 ### Data
 
 All of our data follows the same format, we have modified each test and train set from taxonomy-related tasks to follow this format, as it is handy to use and unified, which is crucial aspect.
@@ -15,34 +14,34 @@ Each train or test set presented with ```.pickle``` format, for the ease of pyth
 
 #### Pre-training with WordNet
 
-For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets.
+For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets and can be downloaded [here](https://anonymfile.com/RnpJ/tax-instructwnettar.gz).
 
 #### Hypernym Discovery
 
-Refactored for our format data could be downloaded here. Few-shots sampled from training set are stored in ```SemEval2018-Task9/few_shots``` directory
+Refactored for our format data could be downloaded [here](https://anonymfile.com/EkbR/data-hypernymdiscoverytar.gz). Few-shots sampled from training set are stored in ```SemEval2018-Task9/few_shots``` directory
 
 #### Taxonomy Enrichment
 
-We have followed TaxoEnrich data and train/test split procedure and after converted data to our format that could be downloaded here.
+We have followed TaxoEnrich data and train/test split procedure and after converted data to our format that could be downloaded [here](https://anonymfile.com/q36r/data-taxonomyenrichmenttar.gz).
 
 #### Taxonomy Construction
 
-We formatted all the pairs for ease of perplexity estimation. Nevertheless, we still need original data for examination. Everything could be downloaded here.
+We formatted all the pairs for ease of perplexity estimation. Nevertheless, we still need original data for examination. Everything could be downloaded [here](https://anonymfile.com/aWK5/data-taxonomyconstructiontar.gz).
 
 #### Lexical Entailment
 
-We formatted the pairs for perplexity estimation, however initial data left in the same format and could be downloaded here.
+We formatted the pairs for perplexity estimation, however initial data left in the same format and could be downloaded [here](https://anonymfile.com/BVjQ/data-lexicalentailmenttar.gz).
 
 
 ### Training, Inference, Fine-tuning
 
-To train the model in our setting one needs to simply run the train.py script with the configs, specified in ```configs/train.yml```. Every parameter is described there. It reports final metrics to WandB
+To train the model in our setting one needs to simply run the ```train.py``` script with the configs, specified in ```configs/train.yml```. Every parameter is described there. It reports final metrics to WandB
 
-To inference the pre-trained model later one can use the inference.py script with the configs in ```configs/inference.yml```. The final metrics are printed and predictions are saved in file.
+To inference the pre-trained model later one can use the ```inference.py``` script with the configs in ```configs/inference.yml```. The final metrics are printed and predictions are saved in file.
 
-To get the detailed metric report with examples one needs to run metrics.py script with the configs in ```configs/metrics.yml```. 
+To get the detailed metric report with examples one needs to run ```metrics.py``` script with the configs in ```configs/metrics.yml```. 
 
-To fine tune the model for your dataset, you can simply treat pre-trained model as intiial checkpoint and run the train.py script with checkpoint.
+To fine tune the model for your dataset, you can simply treat pre-trained model as intiial checkpoint and run the ```train.py``` script with checkpoint.
 
 ### Perplexity Estimation
 
