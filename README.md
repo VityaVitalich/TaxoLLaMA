@@ -1,4 +1,4 @@
-# UniTax
+# TaxoLLaMA
 
 We present a unified model that is capable of solving taxonomy related tasks. Here you could find the instructions to reproduce all our results.
 
