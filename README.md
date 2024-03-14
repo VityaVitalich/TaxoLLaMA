@@ -12,36 +12,39 @@ Each train or test set presented with ```.pickle``` format, for the ease of pyth
 - children: string representing hyponym
 - child_def: string representing definition for the hyponym
 
+The data is availible by this link to [Drive](https://drive.google.com/drive/folders/1nBCW9KlA77SDggn7MqZ3S4NOn4mAD36W?usp=sharing)
 #### Pre-training with WordNet
 
-For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets and can be downloaded [here](https://anonymfile.com/RnpJ/tax-instructwnettar.gz).
+For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets and can be downloaded from Drive named ```tax_instruct_wnet.tar.gz```.
 
 #### Hypernym Discovery
 
-Refactored for our format data could be downloaded [here](https://anonymfile.com/EkbR/data-hypernymdiscoverytar.gz). Few-shots sampled from training set are stored in ```SemEval2018-Task9/few_shots``` directory
+Refactored for our format data could be downloaded from Drive named ```data_hypernym_discovery.tar.gz```. Few-shots sampled from training set are stored in ```SemEval2018-Task9/few_shots``` directory
 
 #### Taxonomy Enrichment
 
-We have followed TaxoEnrich data and train/test split procedure and after converted data to our format that could be downloaded [here](https://anonymfile.com/q36r/data-taxonomyenrichmenttar.gz).
+We have followed TaxoEnrich data and train/test split procedure and after converted data to our format that could be downloaded from Drive named ```data_taxonomy_enrichment.tar.gz```.
 
 #### Taxonomy Construction
 
-We formatted all the pairs for ease of perplexity estimation. Nevertheless, we still need original data for examination. Everything could be downloaded [here](https://anonymfile.com/aWK5/data-taxonomyconstructiontar.gz).
+We formatted all the pairs for ease of perplexity estimation. Nevertheless, we still need original data for examination. Everything could be downloaded from Drive named ```data_taxonomy_construction.tar.gz```.
 
 #### Lexical Entailment
 
-We formatted the pairs for perplexity estimation, however initial data left in the same format and could be downloaded [here](https://anonymfile.com/BVjQ/data-lexicalentailmenttar.gz).
+We formatted the pairs for perplexity estimation, however initial data left in the same format and could be downloaded from Drive named ```data_lexical_entailment.tar.gz```
 
 
 ### Training, Inference, Fine-tuning
 
-To train the model in our setting one needs to simply run the ```train.py``` script with the configs, specified in ```configs/train.yml```. Every parameter is described there. It reports final metrics to WandB
+To use private models, user is required to save the HF auth token in environment variable ```export HF_TOKEN=<your token>```. As well, you need to specify the home directory for caching HF, saving all outputs, trained models, etc. as ```export SAVING_DIR='/your/directory'```
+
+To train the model in our setting one needs to simply run the ```train.py``` script with the configs, specified in ```configs/train.yml```. Every parameter is described there. It reports final metrics to WandB and prints to terminal.
 
 To inference the pre-trained model later one can use the ```inference.py``` script with the configs in ```configs/inference.yml```. The final metrics are printed and predictions are saved in file.
 
 To get the detailed metric report with examples one needs to run ```metrics.py``` script with the configs in ```configs/metrics.yml```. 
 
-To fine tune the model for your dataset, you can simply treat pre-trained model as intiial checkpoint and run the ```train.py``` script with checkpoint.
+To fine tune the model for your dataset, you can simply treat pre-trained model as intiial checkpoint and run the ```train.py``` script with checkpoint, specified in configs.
 
 ### Perplexity Estimation
 
