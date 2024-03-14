@@ -2,6 +2,10 @@
 
 We present a unified model that is capable of solving taxonomy related tasks. Here you could find the instructions to reproduce all our results.
 
+### Model
+
+Models are availible at Hugging Face with corresponding format for [TaxoLLaMA](https://huggingface.co/VityaVitalich/TaxoLLaMA) and [TaxoLLaMA-bench](https://huggingface.co/VityaVitalich/TaxoLLaMA-bench). 
+
 ### Data
 
 All of our data follows the same format, we have modified each test and train set from taxonomy-related tasks to follow this format, as it is handy to use and unified, which is crucial aspect.
