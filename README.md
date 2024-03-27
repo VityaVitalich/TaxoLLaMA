@@ -2,6 +2,11 @@
 
 We present a unified model that is capable of solving taxonomy related tasks, described in our paper TaxoLLaMA: WordNet-based Model for Solving Multiple Lexical Sematic Tasks. Here you could find the instructions to reproduce all our results.
 
+
+### Models
+
+Pre-trained models could be accessed with either "TaxoLLama_ckpt" directory for TaxoLLaMA or with "TaxoLLama_bench_ckpt" directory for TaxoLLaMA-b. Models follow HuggingFace framework and only LORA weight and config are stored.
+
 ### Data
 
 All of our data follows the same format, we have modified each test and train set from taxonomy-related tasks to follow this format, as it is handy to use and unified, which is crucial aspect.
