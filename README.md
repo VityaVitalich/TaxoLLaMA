@@ -1,10 +1,6 @@
 # TaxoLLaMA
 
-We present a unified model that is capable of solving taxonomy related tasks, described in our paper [TaxoLLaMA: WordNet-based Model for Solving Multiple Lexical Sematic Tasks](https://arxiv.org/abs/2403.09207). Here you could find the instructions to reproduce all our results.
-
-### Model
-
-Models are availible at Hugging Face with corresponding format for [TaxoLLaMA](https://huggingface.co/VityaVitalich/TaxoLLaMA) and [TaxoLLaMA-bench](https://huggingface.co/VityaVitalich/TaxoLLaMA-bench). 
+We present a unified model that is capable of solving taxonomy related tasks, described in our paper TaxoLLaMA: WordNet-based Model for Solving Multiple Lexical Sematic Tasks. Here you could find the instructions to reproduce all our results.
 
 ### Data
 
@@ -16,26 +12,26 @@ Each train or test set presented with ```.pickle``` format, for the ease of pyth
 - children: string representing hyponym
 - child_def: string representing definition for the hyponym
 
-The data is availible by this link to [Drive](https://drive.google.com/drive/folders/1nBCW9KlA77SDggn7MqZ3S4NOn4mAD36W?usp=sharing)
+The data is availible by this link to [anonym data](https://file.io/OYhBtA1c64jp)
 #### Pre-training with WordNet
 
-For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets and can be downloaded from Drive named ```tax_instruct_wnet.tar.gz```.
+For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets and can be downloaded from folder named ```tax_instruct_wnet.tar.gz```.
 
 #### Hypernym Discovery
 
-Refactored for our format data could be downloaded from Drive named ```data_hypernym_discovery.tar.gz```. Few-shots sampled from training set are stored in ```SemEval2018-Task9/few_shots``` directory
+Refactored for our format data could be downloaded from folder named ```data_hypernym_discovery.tar.gz```. Few-shots sampled from training set are stored in ```SemEval2018-Task9/few_shots``` directory
 
 #### Taxonomy Enrichment
 
-We have followed TaxoEnrich data and train/test split procedure and after converted data to our format that could be downloaded from Drive named ```data_taxonomy_enrichment.tar.gz```.
+We have followed TaxoEnrich data and train/test split procedure and after converted data to our format that could be downloaded from folder named ```data_taxonomy_enrichment.tar.gz```.
 
 #### Taxonomy Construction
 
-We formatted all the pairs for ease of perplexity estimation. Nevertheless, we still need original data for examination. Everything could be downloaded from Drive named ```data_taxonomy_construction.tar.gz```.
+We formatted all the pairs for ease of perplexity estimation. Nevertheless, we still need original data for examination. Everything could be downloaded from folder named ```data_taxonomy_construction.tar.gz```.
 
 #### Lexical Entailment
 
-We formatted the pairs for perplexity estimation, however initial data left in the same format and could be downloaded from Drive named ```data_lexical_entailment.tar.gz```
+We formatted the pairs for perplexity estimation, however initial data left in the same format and could be downloaded from folder named ```data_lexical_entailment.tar.gz```
 
 
 ### Training, Inference, Fine-tuning
