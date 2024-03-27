@@ -12,7 +12,7 @@ Each train or test set presented with ```.pickle``` format, for the ease of pyth
 - children: string representing hyponym
 - child_def: string representing definition for the hyponym
 
-The data is availible by this link to [anonym data](https://file.io/OYhBtA1c64jp)
+The data is availible directly in this repository with tar.gz archive.
 #### Pre-training with WordNet
 
 For pre-training with instructive WordNet dataset we should simply sample data in our format. The process of sampling and recreation of data is possible in ```DataConsructor/unified_model.ipynb``` notebook. As well we also publish created datasets and can be downloaded from folder named ```tax_instruct_wnet.tar.gz```.
