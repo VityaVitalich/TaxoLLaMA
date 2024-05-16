@@ -1,6 +1,6 @@
 # TaxoLLaMA
 
-We present a unified model that is capable of solving taxonomy related tasks, described in our paper [TaxoLLaMA: WordNet-based Model for Solving Multiple Lexical Sematic Tasks](https://arxiv.org/abs/2403.09207). Here you could find the instructions to reproduce all our results.
+We present a unified model that is capable of solving taxonomy related tasks, described in our paper [TaxoLLaMA: WordNet-based Model for Solving Multiple Lexical Sematic Tasks](https://arxiv.org/abs/2403.09207) accepted to Main ACL 2024. Here you could find the instructions to reproduce all our results.
 
 ### Model
 
